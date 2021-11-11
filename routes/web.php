@@ -23,3 +23,31 @@ Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 Route::get('/voucher', 'HomeController@voucher')->name('voucher');
 
 Route::get('/couponcode', 'HomeController@couponcode')->name('couponcode');
+
+Route::get('/admin/login', function () {
+	return view('admin.login');
+});
+
+Route::get('/admin/register', function () {
+	return view('admin.register');
+});
+
+Route::get('/admin/dashboard', function () {
+	return view('admin.dashboard');
+});
+
+Route::get('/admin/voucher', function () {
+	return view('admin.voucher');
+});
+
+Route::get('/admin/couponcode', function () {
+	return view('admin.couponcode');
+});
+
+Route::get('/admin/voucher/create', function () {
+	return view('admin.createvoucher');
+});
+
+Route::get('/admin/voucher/edit', function () {
+	return view('admin.editvoucher');
+});

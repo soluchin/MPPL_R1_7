@@ -1,30 +1,8 @@
-        @extends('master')
+        @extends('admin.master')
         @section('homeactive')
         active
         @endsection
         @section('content')
-        <div class="top-area">
-            <div class="mod-head-slide">
-                <div class="grid_frame">
-                    <div class="wrap-slide">
-                        <p class="ta-c"><img src="{{asset('images/ajax-loader.gif')}}" alt="loading"></p>
-                        <div id="sys_head_slide" class="head-slide flexslider">
-                            <ul class="slides">
-                                <li>
-                                    <img src="{{asset('images/ex/01_banner.jpg')}}" alt=""/>
-                                </li>
-                                <li>
-                                    <img src="{{asset('images/ex/02_banner.jpg')}}" alt=""/>
-                                </li>
-                                <li>
-                                    <img src="{{asset('images/ex/03_banner.jpg')}}" alt=""/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div id="sys_mod_filter" class="mod-filter">
             <div class="grid_frame">
                 <div class="container_grid clearfix">
@@ -77,7 +55,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_01.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$2.00 Off</div>
@@ -93,7 +71,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_02.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">Save $1.50 on two</div>
@@ -108,7 +86,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_03.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$5.00 Off</div>
@@ -123,7 +101,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_04.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$7.00 Off</div>
@@ -149,7 +127,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_02.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$12.00 Off</div>
@@ -181,7 +159,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_01.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$3.00 Off</div>
@@ -197,7 +175,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_04.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$7.00 Off</div>
@@ -212,7 +190,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_04.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$2.00 Off</div>
@@ -227,7 +205,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_01.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$11.50 off</div>
@@ -242,7 +220,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_03.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$12.00 Off</div>
@@ -257,7 +235,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_02.jpg')}}" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$4.5 Off</div>
@@ -299,7 +277,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -309,7 +287,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -319,7 +297,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -329,7 +307,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -339,7 +317,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -349,7 +327,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
