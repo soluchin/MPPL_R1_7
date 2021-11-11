@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
-    <title>Login</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/font.css"/>
@@ -29,11 +28,10 @@
     <!--[if lte IE 8]>
         <script type="text/javascript" src="js/html5.js"></script>
     <![endif]-->
-    
+
 </head>
 <body class="gray"><!--<div class="alert_w_p_u"></div>-->
-
-<div class="container-page login">
+<div class="container-page">
     <div class="mp-pusher" id="mp-pusher">
         <header class="mod-header">
             <div class="grid_frame">
@@ -45,7 +43,10 @@
                                     <img src="images/logo.png" alt="$SITE_NAME"/>
                                 </a>
                             </h1>
-                            <a id="sys_head_login" class="btn btn-green type-login btn-login" href="#">Login</a>
+                          <a id="sys_head_login" class="btn btn-green type-login btn-login" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="lnr lnr-exit" ></i> <span>{{ __('Logout') }}</span></a>
+									<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+										@csrf
+									</form></a>
                             <nav class="main-nav">
                                 <ul id="main-menu" class="nav nav-horizontal clearfix">
                                   <li class="@yield('homeactive')">
@@ -62,20 +63,19 @@
                                         <i class="icon iPickRed lbl-count"><span>12</span></i>
                                     </li>
                                 </ul>
-
                                 <a id="sys_btn_toogle_menu" class="btn-toogle-res-menu" href="#alternate-menu"></a>
                             </nav>
                         </div>
                     </div>
                 </div>
             </div>
-        </header><!--end: header.mod-header -->
+            </header><!--end: header.mod-header -->
         <nav id="mp-menu" class="mp-menu alternate-menu">
             <div class="mp-level">
                 <h2>Menu</h2>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="coupon.html">Coupons</a></li>
+                    <li><a href="{{url('/kodepromo')}}">Coupons</a></li>
                     <li class="has-sub">
                         <a href="coupon-code.html">Coupons Code</a>
                         <div class="mp-level">
@@ -107,62 +107,7 @@
                 </ul>
             </div>
         </nav><!--end: .mp-menu -->
-        <div class="grid_frame page-content">
-            <div class="container_grid">
-                <div class="mod-register">
-                    <h3 class="rs title-mod">Hello pretty! Welcome to Couponday.com</h3>
-                    <div class="wrap-form-reg clearfix">
-                         <form method="POST" action="{{ route('login') }}">
-                        @csrf
-                            <div class="left-form">
-                                <label class="wrap-txt" for="sys_email">
-                                    <input id="email" type="email" class="input-txt @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                </label>
-                                <label class="wrap-txt" for="sys_pass">
-                                    <input id="password" type="password" class="input-txt @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                </label>
-                                <label class="wrap-check" for="sys_chk_news">
-                                    <input id="sys_chk_news" class="input-chk" type="checkbox"/> Remember me
-                                    <i class="icon iUncheck"></i>
-                                    <a class="lost-pass" href="#">Forgot password ?</a>
-                                </label>
-                                <div class="wrap-login-btn">
-                                    <button type="submit" class="btn-flat gr btn-submit-reg">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-
-                                </div>
-                            </div>
-                            <div class="right-create-acc">
-                                <img class="account" src="images/null.gif" alt="Couponday.com"/>
-                                <p class="lbl-dung-lo rs">Not a member? Don’t worry</p>
-                                <a href="{{url('/register')}}" class="btn-flat yellow btn-submit-reg">Create an account</a>
-                                <div id="sys_warning_sms" class="warning-sms" data-warning-txt="No spam guarantee,No disturb,Promotion News"></div>
-                            </div>
-                        </form>
-                        <i class="line-sep"></i>
-                    </div>
-                </div><!--end: .mod-register -->
-            </div>
-        </div>
+        @yield('content')
         <footer class="mod-footer">
             <div class="footer-top">
                 <div class="grid_frame">
@@ -226,7 +171,6 @@
 <script type="text/javascript" src="js/jquery.nouislider.js"></script>
 <script type="text/javascript" src="js/jquery.popupcommon.js"></script>
 <script type="text/javascript" src="js/html5lightbox.js"></script>
-
 <!--//js for responsive menu-->
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
@@ -238,10 +182,9 @@
 <script type="text/javascript" src="js/jquery.placeholder.js"></script>
 <script type="text/javascript" src="js/create.placeholder.js"></script>
 <![endif]-->
-
 <!--[if lte IE 8]>
 <script type="text/javascript" src="js/ie8.js"></script>
 <![endif]-->
-</body>
 
+</body>
 </html>

@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function dashboard(){
+        return view('dashboard');
+    }
+    public function voucher(){
+        return view('voucher');
+    }
+    public function couponcode(){
+        return view('couponcode');
+    }
 }
