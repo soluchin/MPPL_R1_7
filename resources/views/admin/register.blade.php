@@ -41,75 +41,19 @@
                         <div class="header-content clearfix">
                             <h1 id="logo" class="rs">
                                 <a href="{{url('/dashboard')}}">
-                                    <img src="{{asset('images/logo.png')}}" alt="$SITE_NAME"/>
+                                    <img src="{{asset('images/voucher.png')}}" width="180" alt="$SITE_NAME"/>
                                 </a>
                             </h1>
-                            <a id="sys_head_login" class="btn btn-green type-login btn-login" href="#">Login</a>
-                            <nav class="main-nav">
-                                <ul id="main-menu" class="nav nav-horizontal clearfix">
-                                  <li class="@yield('homeactive')">
-                                        <a href="{{url('/dashboard')}}">Home</a>
-                                    </li>
-                                    <li class="@yield('couponactive')">
-                                        <a href="{{url('/voucher')}}">Voucher</a>
-                                    </li>
-                                    <li class="@yield('couponcodeactive')">
-                                        <a href="{{url('/couponcode')}}">Coupons Code</a>
-                                    </li>
-                                    <li>
-                                        <a href="my-coupon.html">My coupons</a>
-                                        <i class="icon iPickRed lbl-count"><span>12</span></i>
-                                    </li>
-                                </ul>
-                                <a id="sys_btn_toogle_menu" class="btn-toogle-res-menu" href="#alternate-menu"></a>
-                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </header><!--end: header.mod-header -->
-        <nav id="mp-menu" class="mp-menu alternate-menu">
-            <div class="mp-level">
-                <h2>Menu</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="coupon.html">Coupons</a></li>
-                    <li class="has-sub">
-                        <a href="coupon-code.html">Coupons Code</a>
-                        <div class="mp-level">
-                            <h2>Coupons Code</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <ul>
-                                <li><a href="coupon-code.html">Coupons Code 1</a></li>
-                                <li><a href="coupon-code-2.html">Coupons Code 2</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="has-sub">
-                        <a href="brand-list.html">Brands</a>
-                        <div class="mp-level">
-                            <h2>Brands</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <ul>
-                                <li><a href="brand-detail-1.html">Brand Detail 1</a></li>
-                                <li><a href="brand-detail-2.html">Brand Detail 2</a></li>
-                                <li><a href="brand-detail-3.html">Brand Detail 3</a></li>
-                                <li><a href="brand-detail-4.html">Brand Detail 4</a></li>
-                                <li><a href="brand-detail-5.html">Brand Detail 5</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="my-coupon.html">My coupons(12)</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
-        </nav><!--end: .mp-menu -->
         <div class="grid_frame page-content">
             <div class="container_grid">
                 <div class="mod-register">
-                    <h3 class="rs title-mod">Hello pretty! Welcome to Couponday.com</h3>
-                    <div class="desc-reg">Sign up for free and get exclusive access to members-only savings, rewards and special promotions from Coupons.com. Enter in an email and a password or sign up with Facebook.</div>
+                    <h3 class="rs title-mod">Hello pretty! Welcome to MyVoucher</h3>
+                    <div class="desc-reg">Sign up for free and get exclusive access to members-only savings, rewards and special promotions from MyVoucher. Enter in an email and a password.</div>
                     <div class="wrap-form-reg clearfix">
                         <form method="" action="">
                         
@@ -129,24 +73,19 @@
                                 <label>
                                 <input id="password-confirm" type="password" class="input-txt" name="password_confirmation" required autocomplete="new-password" placeholder="confirmation password">
                             </label>
-                            </div>
-                            <div class="right-connect">
+                            <br>
+                            <br>
                                 <button type="submit" class="btn-flat yellow btn-submit-reg">
                                     {{ __('Register') }}
                                 </button>
-                                <div class="sep-connect">
-                                    <span>Or</span>
-                                </div>
-                                <div class="grp-connect">
-                                    <p class="rs">Sign up using your account on:</p>
-                                    <a class="btn-flat fb" href="#">Facebook</a>
-                                    <a class="btn-flat gg" href="#">Google</a>
-                                </div>
+                            </div>
+                            <div class="right-connect">
+                                <img src="{{asset('images/coupon.png')}}">
                             </div>
                         </form>
                     </div>
                     <p class="rs wrap-link-back">
-                        <a href="{{url('/login')}}" class="link-back">
+                        <a href="{{url('/admin/login')}}" class="link-back">
                             <i class="pick-r"></i>
                             Back to login
                         </a>

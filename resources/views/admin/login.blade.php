@@ -42,75 +42,18 @@
                         <div class="header-content clearfix">
                             <h1 id="logo" class="rs">
                                 <a href="{{url('/dashboard')}}">
-                                    <img src="{{asset('images/logo.png')}}" alt="$SITE_NAME"/>
+                                    <img src="{{asset('images/voucher.png')}}" width="180" alt="$SITE_NAME"/>
                                 </a>
                             </h1>
-                            <a id="sys_head_login" class="btn btn-green type-login btn-login" href="#">Login</a>
-                            <nav class="main-nav">
-                                <ul id="main-menu" class="nav nav-horizontal clearfix">
-                                  <li class="@yield('homeactive')">
-                                        <a href="{{url('/dashboard')}}">Home</a>
-                                    </li>
-                                    <li class="@yield('couponactive')">
-                                        <a href="{{url('/admin/voucher')}}">Voucher</a>
-                                    </li>
-                                    <li class="@yield('couponcodeactive')">
-                                        <a href="{{url('/couponcode')}}">Coupons Code</a>
-                                    </li>
-                                    <li>
-                                        <a href="my-coupon.html">My coupons</a>
-                                        <i class="icon iPickRed lbl-count"><span>12</span></i>
-                                    </li>
-                                </ul>
-
-                                <a id="sys_btn_toogle_menu" class="btn-toogle-res-menu" href="#alternate-menu"></a>
-                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </header><!--end: header.mod-header -->
-        <nav id="mp-menu" class="mp-menu alternate-menu">
-            <div class="mp-level">
-                <h2>Menu</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="coupon.html">Coupons</a></li>
-                    <li class="has-sub">
-                        <a href="coupon-code.html">Coupons Code</a>
-                        <div class="mp-level">
-                            <h2>Coupons Code</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <ul>
-                                <li><a href="coupon-code.html">Coupons Code 1</a></li>
-                                <li><a href="coupon-code-2.html">Coupons Code 2</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="has-sub">
-                        <a href="brand-list.html">Brands</a>
-                        <div class="mp-level">
-                            <h2>Brands</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <ul>
-                                <li><a href="brand-detail-1.html">Brand Detail 1</a></li>
-                                <li><a href="brand-detail-2.html">Brand Detail 2</a></li>
-                                <li><a href="brand-detail-3.html">Brand Detail 3</a></li>
-                                <li><a href="brand-detail-4.html">Brand Detail 4</a></li>
-                                <li><a href="brand-detail-5.html">Brand Detail 5</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="my-coupon.html">My coupons(12)</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
-        </nav><!--end: .mp-menu -->
         <div class="grid_frame page-content">
             <div class="container_grid">
                 <div class="mod-register">
-                    <h3 class="rs title-mod">Hello admin! Welcome to Couponday.com</h3>
+                    <h3 class="rs title-mod">Hello admin! Welcome to MyVoucher</h3>
                     <div class="wrap-form-reg clearfix">
                         <form method="" action="">
                             <div class="left-form">
@@ -138,7 +81,7 @@
                             <div class="right-create-acc">
                                 <img class="account" src="{{asset('images/null.gif')}}" alt="Couponday.com"/>
                                 <p class="lbl-dung-lo rs">Not a admin? Don’t worry</p>
-                                <a href="{{url('/register')}}" class="btn-flat yellow btn-submit-reg">Create an account</a>
+                                <a href="{{url('/admin/register')}}" class="btn-flat yellow btn-submit-reg">Create an account</a>
                                 <div id="sys_warning_sms" class="warning-sms" data-warning-txt="No spam guarantee,No disturb,Promotion News"></div>
                             </div>
                         </form>

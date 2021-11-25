@@ -25,43 +25,6 @@
                 </div>
             </div>
         </div>
-        <div id="sys_mod_filter" class="mod-filter">
-            <div class="grid_frame">
-                <div class="container_grid clearfix">
-                    <div class="grid_12">
-                        <div class="lbl-search">
-                            <input class="txt-search" id="sys_txt_search" type="search" placeholder="Search"/>
-                            <input type="submit" class="btn-search" value=""/>
-                        </div>
-                        <div class="select-cate">
-                            <div id="sys_selected_val" class="show-val">
-                                <span data-cate-id="0">All type</span>
-                                <i class="pick-down"></i>
-                            </div>
-                            <div id="sys_list_dd_cate" class="dropdown-cate">
-                                <div class="first-lbl">All Categories</div>
-                                <div class="wrap-list-cate clearfix">
-                                    <a href="#" data-cate-id="1">Baby &amp; Toddler</a>
-                                    <a href="#" data-cate-id="2">Automotive </a>
-                                    <a href="#" data-cate-id="3">Beverages</a>
-                                    <a href="#" data-cate-id="4">Books &amp; Magazines</a>
-                                    <a href="#" data-cate-id="5">Foods </a>
-                                    <a href="#" data-cate-id="6">Health Care</a>
-                                    <a href="#" data-cate-id="7">Home Entertainment</a>
-                                    <a href="#" data-cate-id="8">Personal Care </a>
-                                    <a href="#" data-cate-id="9">Pet Care </a>
-                                    <a href="#" data-cate-id="10">Professional Services </a>
-                                    <a href="#" data-cate-id="11">Toys and Games</a>
-                                    <a href="#" data-cate-id="12">Coupon Codes</a>
-                                    <a href="#" data-cate-id="13">Recipes</a>
-                                    <a href="#" data-cate-id="14">Household </a>
-                                </div>
-                            </div>
-                        </div><!--end: .select-cate -->
-                    </div>
-                </div>
-            </div>
-        </div><!--end: .mod-filter -->
         <div class="grid_frame page-content">
             <div class="container_grid">
                 <div class="mod-grp-coupon block clearfix">
@@ -270,22 +233,6 @@
                     </div>
                     <a class="grid_6 btn btn-orange btn-load-more" href="#">Load more coupon</a>
                 </div><!--end block: Featured Coupons-->
-                <div class="mod-email-newsletter clearfix">
-                    <div class="grid_12">
-                        <div class="wrap-form clearfix">
-                            <div class="left-lbl">
-                                <div class="big-lbl">newsletter</div>
-                                <div class="sml-lbl">Don't miss a chance!</div>
-                            </div>
-                            <div class="wrap-email">
-                                <label for="sys_email_newsletter">
-                                    <input type="email" id="sys_email_newsletter" placeholder="Enter your email here"/>
-                                </label>
-                            </div>
-                            <button class="btn btn-orange btn-submit-email" type="submit">SUBSCRIBE NOW</button>
-                        </div>
-                    </div>
-                </div><!--end: .mod-email-newsletter-->
                 <div class="mod-brands block clearfix">
                     <div class="grid_12">
                         <h3 class="title-block has-link">
@@ -357,17 +304,31 @@
                     </div>
                 </div><!--end: .mod-brand -->
             </div>
-        </div><!-- The Modal -->
-    <div id="myModal" class="modal">
+        </div>
+        <div id="myModal" class="modal">
 
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <!-- If failed complete the quest -->
+        <!-- <h2>Quest: Belanja 3x di Tokopedia</h2> -->
+        <!-- <a class="btn btn-blue btn-view-coupon OK" href="#">OK</a> -->
+        <!-- If success complete the quest -->
+        <h2>Selamat Anda berhasil menyelesaikan quest.</h2>
+        <h2>Kode promo: </h2>
+        <input type="text" value="" id="myInput" class="randomcode" disabled>
+
+        <div class="tooltip">
+        <button onclick="myFunction()" onmouseout="outFunc()">
+        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+        Copy text
+        </button>
+        </div>
+        <a class="btn btn-blue btn-view-coupon OK" href="#">OK</a>
       </div>
 
     </div>
-        @endsection
+@endsection
 @section('script')
 <script>
 // Get the modal
@@ -379,6 +340,8 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var a=document.getElementsByClassName("OK")[0];
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -389,6 +352,9 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+a.onclick = function() {
+  modal.style.display = "none";
+}
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -396,4 +362,35 @@ window.onclick = function(event) {
   }
 }
 </script>
+<script>
+    function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * 
+ charactersLength));
+   }
+   return result;
+}
+var code = document.getElementById("myInput");
+code.value = makeid(8);
+</script>
+<script>
+    var copyText = document.getElementById("myInput");
+    function myFunction() {
+    copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
+
 @endsection

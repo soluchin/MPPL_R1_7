@@ -433,15 +433,30 @@ active
             </div>
         </div>
     	<!-- The Modal -->
-	<div id="myModal" class="modal">
+	
+<div id="myModal" class="modal">
 
-	  <!-- Modal content -->
-	  <div class="modal-content">
-	    <span class="close">&times;</span>
-	    <p>Some text in the Modal..</p>
-	  </div>
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- If failed complete the quest -->
+        <!-- <h2>Quest: Belanja 3x di Tokopedia</h2> -->
+        <!-- <a class="btn btn-blue btn-view-coupon OK" href="#">OK</a> -->
+        <!-- If success complete the quest -->
+        <h2>Selamat Anda berhasil menyelesaikan quest.</h2>
+        <h2>Kode promo: </h2>
+        <input type="text" value="" id="myInput" class="randomcode" disabled>
 
-	</div>
+        <div class="tooltip">
+        <button onclick="myFunction()" onmouseout="outFunc()">
+        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+        Copy text
+        </button>
+        </div>
+        <a class="btn btn-blue btn-view-coupon OK" href="#">OK</a>
+      </div>
+
+    </div>
 @endsection
 @section('script')
 <script>
@@ -454,6 +469,8 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var a=document.getElementsByClassName("OK")[0];
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -464,6 +481,9 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+a.onclick = function() {
+  modal.style.display = "none";
+}
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -471,4 +491,35 @@ window.onclick = function(event) {
   }
 }
 </script>
+<script>
+    function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * 
+ charactersLength));
+   }
+   return result;
+}
+var code = document.getElementById("myInput");
+code.value = makeid(8);
+</script>
+<script>
+    var copyText = document.getElementById("myInput");
+    function myFunction() {
+    copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
+
 @endsection

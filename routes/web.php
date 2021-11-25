@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+//Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 
 Route::get('/voucher', 'HomeController@voucher')->name('voucher');
 

@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/res-menu.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="css/modal.css"/>
+    <link rel="stylesheet" href="css/modalcopy.css"/>
     <!--[if lte IE 8]>
         <script type="text/javascript" src="js/html5.js"></script>
     <![endif]-->
@@ -40,24 +41,28 @@
                     <div class="grid_12">
                         <div class="header-content clearfix">
                             <h1 id="logo" class="rs">
-                                <a href="{{url('/dashboard')}}">
+                                <a href="{{url('/')}}">
                                     <img src="{{asset('images/voucher.png')}}" width="150" alt="$SITE_NAME"/>
                                 </a>
                             </h1>
+                            @if (Route::has('login'))
+                
+                    @auth
+                        
                           <a id="sys_head_login" class="btn btn-green type-login btn-login" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="lnr lnr-exit" ></i> <span>{{ __('Logout') }}</span></a>
-									<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-										@csrf
-									</form></a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form></a>
                             <nav class="main-nav">
                                 <ul id="main-menu" class="nav nav-horizontal clearfix">
                                   <li class="@yield('homeactive')">
-                                        <a href="{{url('/dashboard')}}">Home</a>
+                                        <a href="{{url('/')}}">Home</a>
                                     </li>
                                     <li class="@yield('couponactive')">
                                         <a href="{{url('/voucher')}}">Voucher</a>
                                     </li>
                                     <li class="@yield('couponcodeactive')">
-                                        <a href="{{url('/couponcode')}}">Coupons Code</a>
+                                        <a href="{{url('/couponcode')}}">Coupon Codes</a>
                                     </li>
                                      <li class="@yield('cashbackactive')">
                                         <a href="{{url('/cashback')}}">Cashback</a>
@@ -69,48 +74,20 @@
                                 </ul>
                                 <a id="sys_btn_toogle_menu" class="btn-toogle-res-menu" href="#alternate-menu"></a>
                             </nav>
+                    @else
+                    <a href="{{ route('login') }}" class="btn btn-green type-login btn-login">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="btn btn-green type-login btn-login"style="margin-right: 10px;">Register</a>
+                        @endif
+                    @endauth
+                
+            @endif
                         </div>
                     </div>
                 </div>
             </div>
             </header><!--end: header.mod-header -->
-        <nav id="mp-menu" class="mp-menu alternate-menu">
-            <div class="mp-level">
-                <h2>Menu</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="{{url('/kodepromo')}}">Coupons</a></li>
-                    <li class="has-sub">
-                        <a href="coupon-code.html">Coupons Code</a>
-                        <div class="mp-level">
-                            <h2>Coupons Code</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <ul>
-                                <li><a href="coupon-code.html">Coupons Code 1</a></li>
-                                <li><a href="coupon-code-2.html">Coupons Code 2</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="has-sub">
-                        <a href="brand-list.html">Brands</a>
-                        <div class="mp-level">
-                            <h2>Brands</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <ul>
-                                <li><a href="brand-detail-1.html">Brand Detail 1</a></li>
-                                <li><a href="brand-detail-2.html">Brand Detail 2</a></li>
-                                <li><a href="brand-detail-3.html">Brand Detail 3</a></li>
-                                <li><a href="brand-detail-4.html">Brand Detail 4</a></li>
-                                <li><a href="brand-detail-5.html">Brand Detail 5</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="my-coupon.html">My coupons(12)</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
-        </nav><!--end: .mp-menu -->
         @yield('content')
         <footer class="mod-footer">
             <div class="footer-top">
