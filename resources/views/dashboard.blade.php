@@ -47,8 +47,16 @@
                                 <div class="coupon-brand">Wallmart</div>
                                 <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
                                 <div class="time-left">9 days 4 hours left</div>
-                                <a class="btn btn-blue btn-take-coupon" id="myBtn" href="#">Take Coupon</a>
-                            </div>
+                                <a class="btn btn-blue btn-take-coupon"
+                                @if (Route::has('login'))
+                                    @auth 
+                                id="myBtn" 
+                                @else
+                                href="{{url('/login')}}"
+                                @endauth
+                                @endif
+                                >Take Coupon</a>
+                                </div>
                             <i class="stick-lbl hot-sale"></i>
                         </div><!--end: .coupon-item -->
                         <div class="coupon-item grid_3">
@@ -305,6 +313,7 @@
                 </div><!--end: .mod-brand -->
             </div>
         </div>
+
         <div id="myModal" class="modal">
 
       <!-- Modal content -->
@@ -326,7 +335,6 @@
         </div>
         <a class="btn btn-blue btn-view-coupon OK" href="#">OK</a>
       </div>
-
     </div>
 @endsection
 @section('script')
