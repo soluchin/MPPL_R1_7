@@ -41,7 +41,7 @@
                         <div class="header-content clearfix">
                             <h1 id="logo" class="rs">
                                 <a href="{{url('/dashboard')}}">
-                                    <img src="images/logo.png" alt="$SITE_NAME"/>
+                                    <img src="{{asset('images/voucher.png')}}" width="150" alt="$SITE_NAME"/>
                                 </a>
                             </h1>
                           <a id="sys_head_login" class="btn btn-green type-login btn-login" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="lnr lnr-exit" ></i> <span>{{ __('Logout') }}</span></a>
