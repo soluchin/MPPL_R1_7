@@ -34,4 +34,10 @@ class HomeController extends Controller
     public function couponcode(){
         return view('couponcode');
     }
+    public function mycoupons(){
+        return view('mycoupons');
+    }
+    public function cashback(){
+        return view('cashback');
+    }
 }

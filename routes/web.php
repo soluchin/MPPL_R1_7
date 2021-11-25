@@ -24,6 +24,10 @@ Route::get('/voucher', 'HomeController@voucher')->name('voucher');
 
 Route::get('/couponcode', 'HomeController@couponcode')->name('couponcode');
 
+Route::get('/mycoupons', 'HomeController@mycoupons')->name('mycoupons');
+
+Route::get('/cashback', 'HomeController@cashback')->name('cashback');
+
 Route::get('/admin/login', function () {
 	return view('admin.login');
 });

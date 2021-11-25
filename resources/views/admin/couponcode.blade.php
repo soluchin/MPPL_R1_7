@@ -3,15 +3,6 @@
         active
         @endsection
         @section('content')
-                <div class="top-area">
-            <div class="grid_frame">
-                <div class="container_grid clearfix">
-                    <div class="grid_12">
-                        <h2 class="page-title">Coupon Code</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="grid_frame page-content">
             <div class="container_grid">
                 <div class="layout-2cols clearfix">
@@ -95,7 +86,7 @@
                                         <div class="wrap-logo">
                                             <div class="center-img">
                                                 <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-02.jpg" alt="$BRAND_NAME"></a>
+                                                <a href="#" class="ver_container"><img src="{{asset('images/ex/04-02.jp')}}g" alt="$BRAND_NAME"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +110,7 @@
                                         <div class="wrap-logo">
                                             <div class="center-img">
                                                 <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-06.jpg" alt="$BRAND_NAME"></a>
+                                                <a href="#" class="ver_container"><img src="{{images/ex/04-06.jpg}}" alt="$BRAND_NAME"></a>
                                             </div>
                                         </div>
                                     </div>

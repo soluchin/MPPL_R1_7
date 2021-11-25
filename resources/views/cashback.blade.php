@@ -1,9 +1,9 @@
-        @extends('master')
-        @section('couponactive')
-        active
-        @endsection
-        @section('content')
-                <div class="top-area">
+@extends('master')
+@section('cashbackactive')
+active
+@endsection
+@section('content')
+<div class="top-area">
             <div class="grid_frame">
                 <div class="container_grid clearfix">
                     <div class="grid_12">
@@ -75,7 +75,7 @@
                                         <div class="coupon-brand">Wallmart</div>
                                         <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
                                         <div class="time-left">9 days 4 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon" id="myBtn" href="#">Take Coupon</a>
+                                        <a class="btn btn-blue btn-take-coupon" id ="myBtn" href="#">Take Coupon</a>
                                     </div>
                                     <i class="stick-lbl hot-sale"></i>
                                 </div><!--end: .coupon-item -->
@@ -91,7 +91,7 @@
                                         <div class="coupon-brand">Lindt Chocolate</div>
                                         <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
                                         <div class="time-left">9 days 4 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
+                                        <a class="btn btn-blue btn-take-coupon" id="myBtn" href="#">Take Coupon</a>
                                     </div>
                                     <i class="stick-lbl hot-sale"></i>
                                 </div><!--end: .coupon-item -->
@@ -432,17 +432,17 @@
                 </div><!--end: .mod-brand -->
             </div>
         </div>
-        <!-- The Modal -->
-    <div id="myModal" class="modal">
+    	<!-- The Modal -->
+	<div id="myModal" class="modal">
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <p>Some text in the Modal..</p>
+	  </div>
 
-    </div>
-        @endsection
+	</div>
+@endsection
 @section('script')
 <script>
 // Get the modal
