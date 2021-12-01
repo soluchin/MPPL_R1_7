@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  
             </header><!--end: header.mod-header -->
         @yield('content')
         <footer class="mod-footer">
