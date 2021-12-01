@@ -239,76 +239,9 @@
                             </div>
                         </div><!--end: .coupon-item -->
                     </div>
-                    <a class="grid_6 btn btn-orange btn-load-more" href="#">Load more coupon</a>
-                </div><!--end block: Featured Coupons-->
+                    </div><!--end block: Featured Coupons-->
                 <div class="mod-brands block clearfix">
                     <div class="grid_12">
-                        <h3 class="title-block has-link">
-                            POPULAR BRANDS (129)
-                            <a href="#" class="link-right">See all <i class="pick-right"></i></a>
-                        </h3>
-                    </div>
-                    <div class="block-content list-brand clearfix">
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="{{asset('images/ex/01_07.jpg')}}" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
                     </div>
                 </div><!--end: .mod-brand -->
             </div>

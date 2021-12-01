@@ -247,77 +247,7 @@
                         </div><!--end: .mod-coupons-code -->
                     </div>
                     <div class="grid_4 sidebar">
-                        <div class="mod-search block">
-                            <h3 class="title-block">Find your coupon code</h3>
-                            <div class="block-content">
-                                <label class="lbl-wrap" for="sys_search_coupon_code">
-                                    <input class="keyword-search" id="sys_search_coupon_code" type="search" placeholder="Search"/>
-                                    <input type="submit" class="btn-search" value="">
-                                </label>
-                            </div>
-                        </div><!--end: .mod-search -->
-                        <div class="mod-list-store block">
-                            <h3 class="title-block">Popular store</h3>
-                            <div class="block-content">
-                                <div class="wrap-list-store clearfix">
-                                    <a class="brand-logo" href="#" >
-                                        <span class="wrap-logo">
-                                            <span class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <span class="ver_container"><img src="images/ex/04-07.jpg" alt="$BRAND_NAME"></span>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                    <a class="brand-logo" href="#" >
-                                        <span class="wrap-logo">
-                                            <span class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <span class="ver_container"><img src="images/ex/04-12.jpg" alt="$BRAND_NAME"></span>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                    <a class="brand-logo" href="#" >
-                                        <span class="wrap-logo">
-                                            <span class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <span class="ver_container"><img src="images/ex/04-11.jpg" alt="$BRAND_NAME"></span>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                    <a class="brand-logo" href="#" >
-                                        <span class="wrap-logo">
-                                            <span class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <span class="ver_container"><img src="images/ex/04-10.jpg" alt="$BRAND_NAME"></span>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                    <a class="brand-logo" href="#" >
-                                        <span class="wrap-logo">
-                                            <span class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <span class="ver_container"><img src="images/ex/04-09.jpg" alt="$BRAND_NAME"></span>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                    <a class="brand-logo" href="#" >
-                                        <span class="wrap-logo">
-                                            <span class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <span class="ver_container"><img src="images/ex/04-08.jpg" alt="$BRAND_NAME"></span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div><!--end: .mod-list-store -->
-                        <div class="mod-simple-coupon block">
-                            <h3 class="title-block">Latest coupon</h3>
+                        <h3 class="title-block">Latest coupon</h3>
                             <div class="block-content">
                                 <div class="coupons-code-item simple flex">
                                     <div class="brand-logo thumb-left">

@@ -95,7 +95,7 @@
                     <div class="container_grid clearfix">
                         <div class="grid_9">
                             <div class="company-info">
-                                <img src="images/logo-gray.png" alt="CouponDay"/>
+                                <img src="images/image.png" width="200"alt="CouponDay"/>
                                 <p class="rs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
                                 <p class="rs">
                                     1200 Balh Blah Avenue <br />

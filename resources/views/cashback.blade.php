@@ -7,48 +7,11 @@ active
             <div class="grid_frame">
                 <div class="container_grid clearfix">
                     <div class="grid_12">
-                        <h2 class="page-title">456 Coupons are waiting for you!</h2>
+                        <h2 class="page-title">456 Cashback are waiting for you!</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="sys_mod_filter" class="mod-filter">
-            <div class="grid_frame">
-                <div class="container_grid clearfix">
-                    <div class="grid_12">
-                        <div class="lbl-search">
-                            <input class="txt-search" id="sys_txt_search" type="search" placeholder="Search"/>
-                            <input type="submit" class="btn-search" value=""/>
-                        </div>
-                        <div class="select-cate">
-                            <div id="sys_selected_val" class="show-val">
-                                <span data-cate-id="0">All type</span>
-                                <i class="pick-down"></i>
-                            </div>
-                            <div id="sys_list_dd_cate" class="dropdown-cate">
-                                <div class="first-lbl">All Categories</div>
-                                <div class="wrap-list-cate clearfix">
-                                    <a href="#" data-cate-id="1">Baby & Toddler</a>
-                                    <a href="#" data-cate-id="2">Automotive </a>
-                                    <a href="#" data-cate-id="3">Beverages</a>
-                                    <a href="#" data-cate-id="4">Books & Magazines</a>
-                                    <a href="#" data-cate-id="5">Foods </a>
-                                    <a href="#" data-cate-id="6">Health Care</a>
-                                    <a href="#" data-cate-id="7">Home Entertainment</a>
-                                    <a href="#" data-cate-id="8">Personal Care </a>
-                                    <a href="#" data-cate-id="9">Pet Care </a>
-                                    <a href="#" data-cate-id="10">Professional Services </a>
-                                    <a href="#" data-cate-id="11">Toys and Games</a>
-                                    <a href="#" data-cate-id="12">Coupon Codes</a>
-                                    <a href="#" data-cate-id="13">Recipes</a>
-                                    <a href="#" data-cate-id="14">Household </a>
-                                </div>
-                            </div>
-                        </div><!--end: .select-cate -->
-                    </div>
-                </div>
-            </div>
-        </div><!--end: .mod-filter -->
         <div class="grid_frame page-content">
             <div class="container_grid">
                 <div class="mod-grp-coupon block clearfix tabbable">
@@ -358,77 +321,10 @@ active
                             </div>
                         </div>
                     </div>
-                    <a class="grid_6 btn btn-orange btn-load-more" href="#">LOAD MORE COUPON</a>
-                </div><!--end block: Featured Coupons-->
+                    </div><!--end block: Featured Coupons-->
                 <div class="mod-brands block clearfix">
                     <div class="grid_12">
-                        <h3 class="title-block has-link">
-                            POPULAR BRANDS (129)
-                            <a href="#" class="link-right">See all <i class="pick-right"></i></a>
-                        </h3>
-                    </div>
-                    <div class="block-content list-brand clearfix">
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                        <div class="brand-item grid_4">
-                            <div class="brand-content">
-                                <div class="brand-logo">
-                                    <div class="wrap-img-logo">
-                                        <span class="ver_hold"></span>
-                                        <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end: .brand-item -->
-                    </div>
+                        </div>
                 </div><!--end: .mod-brand -->
             </div>
         </div>
