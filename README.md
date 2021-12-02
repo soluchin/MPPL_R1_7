@@ -1,11 +1,11 @@
 # MyVoucher
 
-### Nama Anggota Kelompok 4 :
+### Nama Anggota Kelompok 7 Responsi 1 :
 | Nama               | NIM           |
 |--------------------|---------------|
-| M Naufal Abdillah  | **G64180074** |
-| Tia Isnawati Noor  | **G64180109** |
-| Rafi Solichin      | **G64180119** |
+| M Naufal Abdillah  | **G64180016** |
+| Tia Isnawati Noor  | **G64180034** |
+| Rafi Solichin      | **G64180068** |
 | Hudzaifah Muttaqin | **G64180119** |<br/>
 
 
