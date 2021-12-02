@@ -40,6 +40,7 @@
     	c. RAM: 8 GB
     3. Teknologi:
    		a. Server: XAMPP
+        b. Framework : Laravel
 
 ## Tabel Fitur<br/>
 
