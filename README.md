@@ -1,78 +1,75 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# MyVoucher
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+### Nama Anggota Kelompok 4 :
+| Nama               | NIM           |
+|--------------------|---------------|
+| M Naufal Abdillah  | **G64180074** |
+| Tia Isnawati Noor  | **G64180109** |
+| Rafi Solichin      | **G64180119** |
+| Hudzaifah Muttaqin | **G64180119** |<br/>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Latar Belakang 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+   	Loyalitas dari pengguna merupakan hal yang patut untuk dihargai. Berbagai cara dilakukan oleh perusahaan untuk menjaga agar pengguna tetap setia menggunakan produk/aplikasi yang dimiliki. Kesetiaan pengguna terhadap suatu produk merupakan hal yang mesti didapatkan dari suatu penjual atau perusahaan. 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+	Salah satu cara yang dilakukan oleh perusahaan untuk menghargai loyalitas dari pengguna adalah dengan memberikan promo/voucher. Reward berupa promo/voucher ini hanya diberikan kepada pengguna yang termasuk dalam kategori loyal oleh penilaian perusahaan. Sehingga dengan adanya reward berupa promo/voucher harapannya pengguna akan tetap setia dan mempunyai daya tarik lebih untuk tetap menggunakan aplikasi yang dimiliki perusahaan.
 
-## Learning Laravel
+	Sistem yang akan dibuat akan berbasis web-based selama kurang lebih 3 bulan. Hasil akhir akan berupa aplikasi sederhana yang dapat digunakan.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Deskripsi Sistem
 
-## Laravel Sponsors
+	Aplikasi/sistem yang akan dibuat adalah aplikasi web yang bisa memungkinkan pengguna untuk mendapatkan promo dan voucher atas keloyalannya terhadap suatu produk 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Deskripsi Kebutuhan
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+#### Kebutuhan Fungsional
+	Menampilkan fitur kode promo, cashback,  dan voucher.
 
-## Contributing
+#### Kebutuhan Nonfungsional
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+	1. Perangkat Lunak:
+   		a. Teks editor: Visual Studio Code
+    	b. Sistem Operasi: Windows 10
+    	c. Design tool: Figma
+    	d. Management tool: Trello, Github, Google drive
+    2. Perangkat Keras:
+   		a. CPU: Intel Core i5-8250U @1.60GHz
+    	b. GPU: Intel(R) UHD Graphics 620, Radeon 530 Series
+    	c. RAM: 8 GB
+    3. Teknologi:
+   		a. Server: XAMPP
 
-## Code of Conduct
+### Tabel Fitur<br/>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| No | 	Fitur	|										Kegunaan														|
+|----|----------|-------------------------------------------------------------------------------------------------------|
+| 1  | Promo 	| Memberikan diskon terhadap beberapa produk dalam waktu yang terbatas									|
+| 2  | Voucher 	| Keuntungan yang didapatkan pengguna berupa diskon khusus terhadap beberapa produk						|
+| 3  | Cashback | Memberikan user uang kembalian sebagai reward karena telah menyelesaikan beberapa syarat sebelumnya 	|
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Metode Pengembangan  <br/>
+Prototyping
 
-## License
+### Schedule<br/>
+![Schedule](gambar/jadwal.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Use Case Diagram<br/>
+![USD](gambar/usecase.png)
+
+### ER Diagram <br/>
+![ERD](gambar/erd1.png)
+
+### Tampilan Website<br/>
+![web1](gambar/website1.png)
+![web2](gambar/website2.png)
+![web3](gambar/website3.png)
+![web4](gambar/website4.png)
+
+### Github<br/>
+![github](gambar/git.png)
+
+### Trello<br/>
+![trello](gambar/trello1.png)
