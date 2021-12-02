@@ -63,10 +63,10 @@ Prototyping
 ![ERD](gambar/erd1.png)
 
 ## Tampilan Website<br/>
-![web1](gambar/website1.png)
-![web2](gambar/website2.png)
-![web3](gambar/website3.png)
-![web4](gambar/website4.png)
+![web1](gambar/ws3.png)
+![web2](gambar/ws2.png)
+![web3](gambar/ws1.png)
+![web4](gambar/ws4.png)
 
 ## Github<br/>
 ![github](gambar/git.png)
