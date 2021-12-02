@@ -9,7 +9,7 @@
 | Hudzaifah Muttaqin | **G64180119** |<br/>
 
 
-### Latar Belakang 
+## Latar Belakang 
 
    	Loyalitas dari pengguna merupakan hal yang patut untuk dihargai. Berbagai cara dilakukan oleh perusahaan untuk menjaga agar pengguna tetap setia menggunakan produk/aplikasi yang dimiliki. Kesetiaan pengguna terhadap suatu produk merupakan hal yang mesti didapatkan dari suatu penjual atau perusahaan. 
 
@@ -18,16 +18,16 @@
 	Sistem yang akan dibuat akan berbasis web-based selama kurang lebih 3 bulan. Hasil akhir akan berupa aplikasi sederhana yang dapat digunakan.
 
 
-### Deskripsi Sistem
+## Deskripsi Sistem
 
 	Aplikasi/sistem yang akan dibuat adalah aplikasi web yang bisa memungkinkan pengguna untuk mendapatkan promo dan voucher atas keloyalannya terhadap suatu produk 
 
-### Deskripsi Kebutuhan
+## Deskripsi Kebutuhan
 
-#### Kebutuhan Fungsional
+### Kebutuhan Fungsional
 	Menampilkan fitur kode promo, cashback,  dan voucher.
 
-#### Kebutuhan Nonfungsional
+### Kebutuhan Nonfungsional
 
 	1. Perangkat Lunak:
    		a. Teks editor: Visual Studio Code
@@ -41,7 +41,7 @@
     3. Teknologi:
    		a. Server: XAMPP
 
-### Tabel Fitur<br/>
+## Tabel Fitur<br/>
 
 | No | 	Fitur	|										Kegunaan														|
 |----|----------|-------------------------------------------------------------------------------------------------------|
@@ -50,26 +50,26 @@
 | 3  | Cashback | Memberikan user uang kembalian sebagai reward karena telah menyelesaikan beberapa syarat sebelumnya 	|
 
 
-### Metode Pengembangan  <br/>
+## Metode Pengembangan  <br/>
 Prototyping
 
-### Schedule<br/>
+## Schedule<br/>
 ![Schedule](gambar/jadwal.png)
 
-### Use Case Diagram<br/>
+## Use Case Diagram<br/>
 ![USD](gambar/usecase.png)
 
-### ER Diagram <br/>
+## ER Diagram <br/>
 ![ERD](gambar/erd1.png)
 
-### Tampilan Website<br/>
+## Tampilan Website<br/>
 ![web1](gambar/website1.png)
 ![web2](gambar/website2.png)
 ![web3](gambar/website3.png)
 ![web4](gambar/website4.png)
 
-### Github<br/>
+## Github<br/>
 ![github](gambar/git.png)
 
-### Trello<br/>
+## <a href="https://trello.com/b/VelLsfKO/mppl"> Trello </a><br/>
 ![trello](gambar/trello1.png)
