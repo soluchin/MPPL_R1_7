@@ -20,13 +20,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 
-Route::get('/voucher', 'HomeController@voucher')->name('voucher');
+Route::get('/voucher', 'VoucherController@index')->name('voucher');
 
-Route::get('/couponcode', 'HomeController@couponcode')->name('couponcode');
+Route::get('/couponcode', 'CodePromoController@index')->name('couponcode');
 
 Route::get('/mycoupons', 'HomeController@mycoupons')->name('mycoupons');
 
-Route::get('/cashback', 'HomeController@cashback')->name('cashback');
+Route::get('/cashback', 'CashbackController@index')->name('cashback');
 
 Route::get('/admin/login', function () {
 	return view('admin.login');

@@ -26,190 +26,24 @@
                     <div class="block-content list-coupon clearfix">
                         <div class="tab-content">
                             <div class="tab-content-item active">
+                                @foreach ($voucher as $vc)
                                 <div class="coupon-item grid_3">
                                     <div class="coupon-content">
                                         <div class="img-thumb-center">
                                             <div class="wrap-img-thumb">
                                                 <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+                                                <a href="coupon-detail.html" class="ver_container"><img src="{{$vc->image}}" alt="$COUPON_TITLE"></a>
                                             </div>
                                         </div>
-                                        <div class="coupon-price">$2.00 Off</div>
-                                        <div class="coupon-brand">Wallmart</div>
-                                        <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
-                                        <div class="time-left">9 days 4 hours left</div>
+                                        <div class="coupon-price">Rp{{$vc->nominal}}</div>
+                                        <div class="coupon-brand">{{$vc->brands}}</div>
+                                        <div class="coupon-desc">{{$vc->description}}</div>
+                                        <div class="time-left">{{$vc->time}} days left</div>
                                         <a class="btn btn-blue btn-take-coupon" id="myBtn" href="#">Take Coupon</a>
                                     </div>
                                     <i class="stick-lbl hot-sale"></i>
                                 </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">Save $1.50 on two</div>
-                                        <div class="coupon-brand">Lindt Chocolate</div>
-                                        <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
-                                        <div class="time-left">9 days 4 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
-                                    </div>
-                                    <i class="stick-lbl hot-sale"></i>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$5.00 Off</div>
-                                        <div class="coupon-brand">Lindt Chocolate</div>
-                                        <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
-                                        <div class="time-left">2 days 14 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon untake" href="#">Un Take Coupon</a>
-                                    </div>
-                                    <i class="stick-lbl hot-sale"></i>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$7.00 Off</div>
-                                        <div class="coupon-brand">Wallmart</div>
-                                        <div class="coupon-desc">During the Red Star Spectacular Sale going on now get an extra 20% off</div>
-                                        <div class="time-left">12 days 1 hour left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
-                                    </div>
-                                    <i class="stick-lbl hot-sale"></i>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$12.00 Off</div>
-                                        <div class="coupon-brand">Wallmart</div>
-                                        <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
-                                        <div class="time-left">9 days 4 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
-                                    </div>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$17.50 off</div>
-                                        <div class="coupon-brand">Lindt Chocolate</div>
-                                        <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
-                                        <div class="time-left">9 days 4 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
-                                    </div>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$3.00 Off</div>
-                                        <div class="coupon-brand">Lindt Chocolate</div>
-                                        <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
-                                        <div class="time-left">2 days 14 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
-                                    </div>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$7.00 Off</div>
-                                        <div class="coupon-brand">Wallmart</div>
-                                        <div class="coupon-desc">During the Red Star Spectacular Sale going on now get an extra 20% off</div>
-                                        <div class="time-left">12 days 1 hour left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
-                                    </div>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$2.00 Off</div>
-                                        <div class="coupon-brand">Lindt Chocolate</div>
-                                        <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
-                                        <div class="time-left">9 days 4 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
-                                    </div>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$11.50 off</div>
-                                        <div class="coupon-brand">Lindt Chocolate</div>
-                                        <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
-                                        <div class="time-left">9 days 4 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
-                                    </div>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$12.00 Off</div>
-                                        <div class="coupon-brand">SunMart</div>
-                                        <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect </div>
-                                        <div class="time-left">2 days 14 hours left</div>
-                                        <a class="btn btn-blue btn-take-coupon untake" href="#">Un Take Coupon</a>
-                                    </div>
-                                </div><!--end: .coupon-item -->
-                                <div class="coupon-item grid_3">
-                                    <div class="coupon-content">
-                                        <div class="img-thumb-center">
-                                            <div class="wrap-img-thumb">
-                                                <span class="ver_hold"></span>
-                                                <a href="coupon-detail.html" class="ver_container"><img src="images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
-                                            </div>
-                                        </div>
-                                        <div class="coupon-price">$4.5 Off</div>
-                                        <div class="coupon-brand">Wallmart</div>
-                                        <div class="coupon-desc">During the Red Star Spectacular Sale going on now get an extra 20% off</div>
-                                        <div class="time-left">12 days 1 hour left</div>
-                                        <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
-                                    </div>
-                                </div><!--end: .coupon-item -->
+                                @endforeach
                             </div>
                             <div class="tab-content-item">
                                 <div class="coupon-item grid_3">

@@ -18,222 +18,26 @@
                     <div class="grid_8 content">
                         <div class="mod-coupons-code">
                             <div class="wrap-list">
-                                <div class="coupons-code-item full flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-01.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">12 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">2 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" id="myBtn" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
+                                @foreach ($couponcode as $cc)
                                 <div class="coupons-code-item flex">
                                     <div class="brand-logo thumb-left">
                                         <div class="wrap-logo">
                                             <div class="center-img">
                                                 <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-04.jpg" alt="$BRAND_NAME"></a>
+                                                <a href="#" class="ver_container"><img src="{{$cc->image}}" alt="$BRAND_NAME"></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
+                                        <p class="rs save-price"><a href="#">{{$cc->name}}</a></p>
+                                        <p class="rs coupon-desc">Diskon Rp{{$cc->nominal}}</p>
+                                        <p class="rs coupon-desc">{{$cc->description}}</p>
                                         <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">12 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">2 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
+                                        <a class="btn btn-blue btn-view-coupon" id="myBtn" href="#">VIEW <span>COUPON</span> CODE</a>
                                         </div>
                                     </div>
                                 </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-05.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">16 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">0 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-02.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">21 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">12 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-06.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">321 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">5 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-04.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">34 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">8 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-01.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">59 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">21 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-05.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">63 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">10 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="images/ex/04-06.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">63 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">10 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
+                                @endforeach
                             </div>
                             <div class="pagination">
                                 <a class="page-nav" href="#"><i class="icon iPrev"></i></a>
